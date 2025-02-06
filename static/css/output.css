@@ -1024,6 +1024,11 @@ body{
     padding-right: 10vh;
   }
 
+  .md\:px-\[4vh\] {
+    padding-left: 4vh;
+    padding-right: 4vh;
+  }
+
   .md\:text-\[16px\] {
     font-size: 16px;
   }
@@ -1085,6 +1090,11 @@ body{
   .lg\:px-\[27vh\] {
     padding-left: 27vh;
     padding-right: 27vh;
+  }
+
+  .lg\:px-\[8vh\] {
+    padding-left: 8vh;
+    padding-right: 8vh;
   }
 
   .lg\:text-\[50px\] {
