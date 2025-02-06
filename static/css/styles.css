@@ -61,3 +61,13 @@ body{
 .social-btn:hover{
     color: orange;
 }
+
+.moving-name {
+    animation: upDownMain 2s infinite ease-in-out;
+  }
+
+@keyframes upDownMain {
+    0% { transform: translateY(5px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(5px); }
+  }
