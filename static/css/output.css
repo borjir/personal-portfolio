@@ -961,6 +961,21 @@ video {
   padding-right: 8px;
 }
 
+.px-\[5vh\] {
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+
+.px-\[7vh\] {
+  padding-left: 7vh;
+  padding-right: 7vh;
+}
+
+.px-\[8vh\] {
+  padding-left: 8vh;
+  padding-right: 8vh;
+}
+
 .pt-\[7vh\] {
   padding-top: 7vh;
 }
