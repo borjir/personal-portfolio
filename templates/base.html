@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}My Django App{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/jojiico.ico' %}">
     <script src="https://kit.fontawesome.com/108e39450f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
     {% endblock stylesheet %}
 </head>
 <body>
-    <div class="px-[10vh] lg:px-[27vh] flex flex-col gap-[6vh]">
+    <div class="px-[2vh] md:px-[10vh] lg:px-[27vh] flex flex-col gap-[6vh]">
         <header class="flex flex-col gap-3 lg:flex-row md:justify-between py-[6vh]">
             <div class="italic font-semibold focus:border-red-500">
                 <h2 class="text-[25px] text-center"><a href="https://www.facebook.com/jojircp" target="_blank" class="focus:border-[orange] focus:outline-[0px] focus:border-b-2">Joel Jay Arcipe</a></h2>

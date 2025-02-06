@@ -53,3 +53,23 @@ img {
     border-radius: 5px;
     padding: 5px;
 }
+
+.experience-div{
+    background-color: var(--primary);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.circle{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid black;
+    transform: translateX(-30px)
+}
+
+ul{
+    list-style: disc;
+}

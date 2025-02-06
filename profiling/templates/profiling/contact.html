@@ -3,10 +3,26 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Item Categories{% endblock %}
+{% block title %}Contact{% endblock %}
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/index.css' %}">
 
-contact
+<h1 class="text-[45px] md:text-[55px] lg:text-[70px] font-semibold pb-[40px]">Contact</h1>
+
+<div class="flex flex-col md:flex-row gap-5">
+    <div class="flex flex-col flex-1">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" class="border-[1px] py-[8px] px-[10px] border-black rounded-sm text-sm">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="border-[1px] py-[8px] px-[10px] border-black rounded-sm text-sm">
+        <label for="fullname">Contact No.</label>
+        <input type="number" id="fullname" class="border-[1px] py-[8px] px-[10px] border-black rounded-sm text-sm">
+        <label for="message">Message</label>
+        <textarea id="message" class="border-[1px] py-[8px] px-[8px] border-black rounded-sm text-sm h-[150px]"></textarea>
+    </div>
+    <div class="flex-1 pt-[4vh]">
+        If you have any concerns about web development you can reach me out. If youre looking for a web developer that can help you for your project maybe we can talk about it. You can email me using the form.
+    </div>
+</div>
 
 {% endblock %}
