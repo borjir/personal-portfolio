@@ -1,0 +1,90 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<div class="flex flex-col gap-10">
+    <div class="flex flex-col flex-1 gap-7 items-center">
+        <div class="h-[200px] w-[200px] lg:h-[250px] lg:w-[250px] overflow-hidden rounded-full object-cover">
+            <img src="{% static 'images/joji.jpg' %}" class="w-full h-auto object-cover" alt="gwapa">
+        </div>
+        <div class="text-center">
+            <h1 class="font-semibold text-[32px]">Joel Jay Arcipe</h1>
+            <p>A 21-year old <span class="font-semibold">Web Developer</span> from Balamban based in Cebu, Philippines</p>
+        </div>
+        <div class="flex gap-[3vh]">
+            <a href="https://www.facebook.com/jojircp" target="_blank">
+                <i class="social-btn fa-brands fa-facebook cursor-pointer text-[30px]"></i>
+            </a>
+            <a href="https://m.me/jojircp" target="_blank">
+                <i class="social-btn fa-brands fa-facebook-messenger cursor-pointer text-[30px]"></i>
+            </a>
+            <a href="https://www.instagram.com/jojircp/" target="_blank">
+                <i class="social-btn fa-brands fa-instagram cursor-pointer text-[30px]"></i>
+            </a>
+            <a href="https://github.com/borjir" target="_blank">
+                <i class="social-btn fa-brands fa-github cursor-pointer text-[30px]"></i>
+            </a>
+            
+        </div>
+        <div class="flex justify-around gap-[2vh] md:gap-[5vh] flex-wrap">
+            <a href="" class="btn-transform black-btn rounded-[5px] text-center bg-black text-white w-[30vh] py-[5px] cursor-pointer">
+                Download CV
+            </a>
+            <a href="{% url 'contact' %}" class="btn-transform white-btn rounded-[5px] text-center bg-white text-black border-2 border-black w-[30vh] py-[5px]">
+                Let's Talk
+            </a>
+        </div>
+        <div class="pt-[7vh]">
+            <i class="moving-element fa-solid fa-arrow-down-long" style="color: black; font-size:30px; font-weight: bold;"></i>
+        </div>
+    </div>
+
+
+<!--RECENT WORK-->
+    <div class="flex flex-col gap-[8vh] lg:gap-[15vh]">
+        <h1 class="text-[45px] md:text-[55px] lg:text-[70px] font-semibold text-center lg:text-left">Recent Work</h1>
+
+        <div class="proj-div flex flex-col lg:grid lg:grid-cols-2 gap-[5vh]">
+            <div class="flex justify-center items-center">
+                <img src="{% static 'images/K7.png' %}" alt="krizenix">
+            </div>
+            <div class="">
+                <h2 class="font-semibold text-[1.5rem]">Krizenix Trading Supply Mgmt & Bookkeeping Services System</h2>
+                <p>This project was developed during my 3rd year from our Database Management Systems (DBMS) finals. The purpose of this project is to checkout the cheapest overall prices from different hardwares
+                    based on the list of items given by the client. It also tracks payment status for other clients to reach them out and pay their permits as soon as possible. I used 
+                    <span class="font-semibold">Python, PyQt5, and MongoDB.</span>
+                </p>
+                <div class="py-[5vh] flex">
+                    <a href="https://github.com/borjir/KrizenixTrading" target="_blank" class="project-btn rounded-[5px] text-center bg-white text-black border-2 border-black py-[5px]">
+                        View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="proj-div flex flex-col lg:grid lg:grid-cols-2 gap-[10vh]">
+            <div class="flex justify-center items-center lg:order-2">
+                <img src="{% static 'images/face-recog.jpg' %}" alt="krizenix">
+            </div>
+            <div class="lg:order-1">
+                <h2 class="font-semibold text-[1.5rem]">CTU Facial Recognition System</h2>
+                <p>This project was developed during my 3rd year from our Human-Computer Interaction (HCI) finals. It is a simple project that its main purpose is to login/register through facial recognition and gives out personal information
+                    afterwards. I used <span class="font-semibold">Python, PyQt5, and SQLite.</span>
+                </p>
+                <div class="py-[5vh] flex">
+                    <a href="https://github.com/borjir/CTUFacialRecognition" target="_blank" class="project-btn rounded-[5px] text-center bg-white text-black border-2 border-black py-[5px]">
+                        View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+{% endblock %}

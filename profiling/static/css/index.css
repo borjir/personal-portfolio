@@ -1,0 +1,55 @@
+:root{
+    --primary: #eef0f3;
+}
+
+.btn-transform{
+    transition-timing-function: ease-in-out;
+    transition: 0.5s ease;
+}
+.btn-transform:hover{
+    transform: scale(1.05, 1.05);
+    color: orange;
+}
+.btn-transform:hover, .white-btn:hover{
+    border-color: #323232;
+}
+
+.moving-element {
+    animation: upDown 2s infinite ease-in-out;
+  }
+
+@keyframes upDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+
+
+.project-btn{
+    width: 200px;
+}
+
+.project-btn:hover{
+    background-color: black;
+    color: orange;
+}
+
+img {
+    transition: 0.5s ease-in-out; /* Ensures smooth transition */
+}
+
+.proj-div:hover img {
+    transform: scale(1.05);
+}
+
+.recommend-div{
+    background-color: var(--primary);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.tech-div{
+    background-color: var(--primary);
+    border-radius: 5px;
+    padding: 5px;
+}

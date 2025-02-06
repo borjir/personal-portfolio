@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Django App{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <script src="https://kit.fontawesome.com/108e39450f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    {% block stylesheet %}
+    {% endblock stylesheet %}
+</head>
+<body>
+    <div class="px-[10vh] lg:px-[27vh] flex flex-col gap-[6vh]">
+        <header class="flex flex-col gap-3 lg:flex-row md:justify-between py-[6vh]">
+            <div class="italic font-semibold focus:border-red-500">
+                <h2 class="text-[25px] text-center"><a href="https://www.facebook.com/jojircp" target="_blank" class="focus:border-[orange] focus:outline-[0px] focus:border-b-2">Joel Jay Arcipe</a></h2>
+            </div>
+            <div class="head-nav flex justify-center items-center text-[#808080] gap-5 flex-wrap">
+                <a href="{% url 'index' %}">
+                    Home
+                </a>
+                <a href="{% url 'about' %}">
+                    About
+                </a>
+                <a href="{% url 'projects' %}">
+                    Projects
+                </a>
+                <a href="{% url 'experience' %}">
+                    Experience
+                </a>
+                <a href="{% url 'contact' %}">
+                    Contact
+                </a>
+            </div>
+        </header>
+        <main>
+            {% block content %}
+                    <!-- Page-specific content goes here -->
+            {% endblock content %}
+        </main>
+        <footer class="flex flex-col font-semibold items-center text-center gap-4 border-t-[1px] border-solid border-[#808080] py-[6vh]">
+            <div>
+                <h3 class="text-[17px]">© Joel Jay Arcipe</h2>
+            </div>
+            <div class="flex gap-5">
+                <a href="https://www.facebook.com/jojircp" target="_blank">
+                    <i class="social-btn fa-brands fa-facebook cursor-pointer text-[25px]"></i>
+                </a>
+                <a href="https://m.me/jojircp" target="_blank">
+                    <i class="social-btn fa-brands fa-facebook-messenger cursor-pointer text-[25px]"></i>
+                </a>
+                <a href="https://www.instagram.com/jojircp/" target="_blank">
+                    <i class="social-btn fa-brands fa-instagram cursor-pointer text-[25px]"></i>
+                </a>
+                <a href="https://github.com/borjir" target="_blank">
+                    <i class="social-btn fa-brands fa-github cursor-pointer text-[25px]"></i>
+                </a>
+            </div> 
+            <div class="footer-nav text-[15px]">
+                <a href="{% url 'index' %}" class="underline">Home</a>
+                |
+                <a href="{% url 'about' %}" class="underline">About</a>
+                |
+                <a href="{% url 'projects' %}" class="underline">Projects</a>
+                |
+                <a href="{% url 'experience' %}" class="underline">Experience</a>
+                |
+                <a href="{% url 'contact' %}" class="underline">Contact</a>
+            </div>
+        </footer>
+    </div>
+    
+    
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

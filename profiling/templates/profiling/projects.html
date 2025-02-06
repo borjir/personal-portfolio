@@ -1,0 +1,65 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Item Categories{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+<div class="flex flex-col gap-[8vh] lg:gap-[15vh]">
+    <h1 class="text-[45px] md:text-[55px] lg:text-[70px] font-semibold text-center lg:text-left">Recent Work</h1>
+
+    <div class="proj-div flex flex-col lg:grid lg:grid-cols-2 gap-[5vh]">
+        <div class="flex justify-center items-center">
+            <img src="{% static 'images/K7.png' %}" alt="krizenix">
+        </div>
+        <div class="">
+            <h2 class="font-semibold text-[1.5rem]">Krizenix Trading Supply Mgmt & Bookkeeping Services System</h2>
+            <p>This project was developed during my 3rd year from our Database Management Systems (DBMS) finals. The purpose of this project is to checkout the cheapest overall prices from different hardwares
+                based on the list of items given by the client. It also tracks payment status for other clients to reach them out and pay their permits as soon as possible. I used 
+                <span class="font-semibold">Python, PyQt5, and MongoDB.</span>
+            </p>
+            <div class="py-[5vh] flex">
+                <a href="https://github.com/borjir/KrizenixTrading" target="_blank" class="project-btn rounded-[5px] text-center bg-white text-black border-2 border-black py-[5px]">
+                    View Code
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="proj-div flex flex-col lg:grid lg:grid-cols-2 gap-[10vh]">
+        <div class="flex justify-center items-center lg:order-2">
+            <img src="{% static 'images/face-recog.jpg' %}" alt="krizenix">
+        </div>
+        <div class="lg:order-1">
+            <h2 class="font-semibold text-[1.5rem]">CTU Facial Recognition System</h2>
+            <p>This project was developed during my 3rd year from our Human-Computer Interaction (HCI) finals. It is a simple project that its main purpose is to login/register through facial recognition and gives out personal information
+                afterwards. I used <span class="font-semibold">Python, PyQt5, and SQLite.</span>
+            </p>
+            <div class="py-[5vh] flex">
+                <a href="https://github.com/borjir/CTUFacialRecognition" target="_blank" class="project-btn rounded-[5px] text-center bg-white text-black border-2 border-black py-[5px]">
+                    View Code
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="proj-div flex flex-col lg:grid lg:grid-cols-2 gap-[5vh]">
+        <div class="flex justify-center items-center">
+            <img src="{% static 'images/SPF.png' %}" alt="krizenix">
+        </div>
+        <div class="">
+            <h2 class="font-semibold text-[1.5rem]">Spirit's Fitness Gym Management System</h2>
+            <p>This project was developed during my 2nd year from our Information Management (IM) finals. The purpose of this project is to track the daily, weekly, and monthly entries / members from their gym
+                to calculate the overall payments for this month. It also tracks the equipment and its respective employees, trainers, and schedule between members and trainers. I used 
+                <span class="font-semibold">Python, PyQt5, and PostgreSQL.</span>
+            </p>
+            <div class="py-[5vh] flex">
+                <a href="https://github.com/borjir/SpiritsFitnessGymGUI" target="_blank" class="project-btn rounded-[5px] text-center bg-white text-black border-2 border-black py-[5px]">
+                    View Code
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
