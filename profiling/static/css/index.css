@@ -3,7 +3,6 @@
 }
 
 .btn-transform{
-    transition-timing-function: ease-in-out;
     transition: 0.5s ease;
 }
 .btn-transform:hover{
@@ -15,7 +14,7 @@
 }
 
 .moving-element {
-    animation: upDown 2s infinite ease-in-out;
+    animation: upDown 2s ease-in-out infinite;
   }
 
 @keyframes upDown {
